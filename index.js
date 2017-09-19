@@ -52,7 +52,7 @@ cmdSwitchPlatform.prototype.addAccessory = function (data) {
   if (!accessory) {
     // Setup accessory as SWITCH (8) category.
     var uuid = UUIDGen.generate(data.name);
-    accessory = new Accessory(data.name, uuid, 8);
+    accessory = new Accessory(data.name, uuid, 5);
 
     // Setup HomeKit switch service
     accessory.addService(Service.Switch, data.name);
